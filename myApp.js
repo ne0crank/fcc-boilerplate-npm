@@ -9,7 +9,9 @@ let app = express();
 
 
 app.get("/", (req,res) => {
-    res.send("Hello Express");    
+    res.send("Hello Express");
+    filePath = __dirname + '/views/index.html';  
+    res.send(filePath);  
   });
   
 
