@@ -9,8 +9,9 @@ app.get("/", (req,res) => {
     filePath = __dirname + '/views/index.html';  
     res.sendFile(filePath);  
   });
-  
 
+pubFolder = __dirname + '/public';
+app.use(pubFolder, express.static());
 
 
 
