@@ -27,7 +27,7 @@ bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, () => {
 });
 
 
-app.get("/", (req,res) {
+app.get("/", (req,res) => {
   res.send("Hello Express");    
 });
 
