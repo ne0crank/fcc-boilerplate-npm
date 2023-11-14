@@ -1,10 +1,10 @@
 {
 	"name": "fcc-learn-npm-package-json",
+	"author": "Kent Schaeffer",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
 	"main": "server.js",
-	"author": "Kent Schaeffer",
 	"scripts": {
 		"start": "node server.js"
 	},
