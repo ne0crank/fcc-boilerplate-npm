@@ -3,7 +3,7 @@
 	"author": "Kent-Schaeffer",
 	"description": "this is a cool project that I wrote",
 	"keywords": [ "nodejs", "freecodecamp", "api" ],
-	"verrsion": "1.1.0",
+	"version": "1.1.0",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
@@ -14,6 +14,6 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://idontknow/todo.git"
+		"url": "https://git.heroku.com/fcc-boilerplate-npm.git"
 	}
 }
