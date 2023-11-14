@@ -14,7 +14,9 @@ pubFolder = __dirname + '/public';
 app.use('/public', express.static(pubFolder));
 
 
-
+app.get('/json', (req,res) => {
+    res.json({"message": "Hello json"});
+})
 
 
 
