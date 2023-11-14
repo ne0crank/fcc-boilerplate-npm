@@ -1,21 +1,21 @@
 let express = require('express');
+require('dotenv').config();
 let app = express();
-
-
 
 
 app.get("/", (req,res) => {
     //res.send("Hello Express");
-    filePath = __dirname + '/views/index.html';  
+    let filePath = __dirname + '/views/index.html';  
     res.sendFile(filePath);  
   });
 
-pubFolder = __dirname + '/public';
+let pubFolder = __dirname + '/public';
 app.use('/public', express.static(pubFolder));
 
 
 app.get('/json', (req,res) => {
-    res.json({"message": "Hello json"});
+    let message = (process.env.MESSAGE_STYLE === 'uppercase') ? "HELLO JSON" : "Hello json";
+    res.json({"message": message});
 })
 
 
