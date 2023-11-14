@@ -8,6 +8,10 @@ const myApp = require('./myApp');
 const express = require('express');
 const app = express();
 
+app.get("/", (req,res) {
+  res.send("Hello Express");    
+});
+
 if (!process.env.DISABLE_XORIGIN) {
   app.use((req, res, next) => {
     const allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com'];
