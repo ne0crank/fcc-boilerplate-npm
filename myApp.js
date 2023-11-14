@@ -11,7 +11,7 @@ app.get("/", (req,res) => {
   });
 
 pubFolder = __dirname + '/public';
-app.use(pubFolder, express.static());
+app.use('/public', express.static(pubFolder));
 
 
 
